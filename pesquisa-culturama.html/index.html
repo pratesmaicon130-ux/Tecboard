@@ -6,35 +6,54 @@
     <title>Pesquisa Culturama</title>
 </head>
 <body>
-      <form action=""><h2>Pesquisa Culturama</h2>
+      <form action=""> <h2>Pesquisa Culturama</h2>
 
-     <fieldset>
-        <legend>Dados pessoais</legend>
-         <div>
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome " name="nome" required>
-          <br>
-         </div>
-
-         <div>
-          <label for="idade">Idade:</label>
-        <input type="number" id="idade" name="idade" min="12" max="100" required>
-          <br>
-          </div>
+         <fieldset>
+          <legend>Dados pesoais </legend>
  
-        <div>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-          <br>
-          </div>
+              <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+              </div>
+     
+              <div>
+                <label for="idade">Idade:</label>
+                <input type="number" name="idade" id="idade" min="12" max="100" required>
+              </div>
 
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" name="telefone" pattern="[0-9] {11}" placeholder="11988887777" required>
-          <br>
-       
-     </fieldset>
-      <button type="submit">Enviar</button>
-      </form>
-    
+              <div>
+                <label for="Data de Nascimento">Data de Nascimento:</label>
+                <input type="date" name="Data de Nascimento" id="Data de Nascimento" >
+              </div>
+
+              <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+              </div>
+
+              <div>
+                <label for="telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="telefone" pattern="[0-9]{11}" placeholder="11988887777" required>
+              </div>
+
+              <div>
+                 <label for="foto">foto:</label>
+                 <input type="file" id="foto" name="foto" accept="image/*">
+              </div>
+
+
+
+
+             <button type="submit">Enviar</button>
+         </fieldset>
+
+
+
+
+
+
+
+
+    </form> 
 </body>
 </html>
